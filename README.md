@@ -42,49 +42,17 @@ pip install -r requirements.txt
 
 ## 📒 Inference
 
-For a quick use, you can just try:
+```Bash
+python test/infer.py 
+```
+
+
+## 🚀 Evaluation
+
 
 ```Bash
-python inference.py
+python test/eval.py 
 ```
-
-
-## 🚀 Test
-
-### Panorama Training
-
-We provide a training pipeline based on **Insta360-Research/Matterport3D_polished**, along with corresponding launch scripts.
-You can start training with a single command:
-
-
-```bash
-bash train.sh
-```
-
-
-After training is completed, you will find a checkpoint file saved under the output directory, typically like:
-
-
-```bash
-model_saved/lightning_logs/version_x/checkpoints/vsclip_epoch=xxx.ckpt/checkpoint/mp_rank_00_model_states.pt
-```
-
-
-You can extract the LoRA weights from the full `.pt` checkpoint by running:
-
-
-```bash
-python get_lora_weights.py <path_to_your_pt_file> <output_dir>
-```
-
-
-If you don’t specify `output_dir`, the extracted weights will be saved by default to:
-
-
-```bash
-lora_output/
-```
-
 
 After that, you can directly use your trained LoRA in the inference script.
 Simply replace the default model path `"fenghora/DiT360-Panorama-Image-Generation"` in `inference.py` with your output directory (e.g., `"lora_output"`), and then run:
@@ -99,29 +67,18 @@ python inference.py
 
 We appreciate the open source of the following projects:
 
-* [diffusers](https://github.com/huggingface/diffusers)
-* [Personalize Anything](https://github.com/fenghora/personalize-anything)
-* [RF-Inversion](https://github.com/LituRout/RF-Inversion)
-* [RF-Solver-Edit](https://github.com/wangjiangshan0725/RF-Solver-Edit)
+* [PanDA](https://caozidong.github.io/PanDA_Depth/)
+* [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2)
+
 
 ## Citation
 ```
-@misc{dit360,
-  title={DiT360: High-Fidelity Panoramic Image Generation via Hybrid Training}, 
-  author={Haoran Feng and Dizhe Zhang and Xiangtai Li and Bo Du and Lu Qi},
-  year={2025},
-  eprint={2510.11712},
-  archivePrefix={arXiv},
-}
-```
-If you find our **dataset** useful, please include a citation for **Matterport3D**:
-```
-@article{Matterport3D,
-  title={Matterport3D: Learning from RGB-D Data in Indoor Environments},
-  author={Chang, Angel and Dai, Angela and Funkhouser, Thomas and Halber, Maciej and Niessner, Matthias and Savva, Manolis and Song, Shuran and Zeng, Andy and Zhang, Yinda},
-  journal={International Conference on 3D Vision (3DV)},
-  year={2017}
-}
+@article{lin2025dap,
+          title={Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation},
+          author={Lin, Xin and Song, Meixi and Zhang, Dizhe and Lu, Wenxuan and Li, Haodong and Du, Bo and Yang, Ming-Hsuan and Nguyen, Truong and Qi, Lu},
+          journal={arXiv},
+          year={2025}
+        }
 ```
 If you find our **inpainting & outpainting** useful, please include a citation for **Personalize Anything**:
 ```
