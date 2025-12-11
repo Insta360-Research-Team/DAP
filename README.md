@@ -54,13 +54,7 @@ python test/infer.py
 python test/eval.py 
 ```
 
-After that, you can directly use your trained LoRA in the inference script.
-Simply replace the default model path `"fenghora/DiT360-Panorama-Image-Generation"` in `inference.py` with your output directory (e.g., `"lora_output"`), and then run:
 
-
-```bash
-python inference.py
-```
 
 
 ## 🤝 Acknowledgement
@@ -80,12 +74,4 @@ We appreciate the open source of the following projects:
           year={2025}
         }
 ```
-If you find our **inpainting & outpainting** useful, please include a citation for **Personalize Anything**:
-```
-@article{feng2025personalize,
-  title={Personalize Anything for Free with Diffusion Transformer},
-  author={Feng, Haoran and Huang, Zehuan and Li, Lin and Lv, Hairong and Sheng, Lu},
-  journal={arXiv preprint arXiv:2503.12590},
-  year={2025}
-}
-```
+
