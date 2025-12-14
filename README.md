@@ -38,6 +38,7 @@ pip install -r requirements.txt
 
 ## 🖼️ Dataset
 
+The training dataset will be open soon.
 
 ## 📒 Inference
 
