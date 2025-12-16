@@ -26,9 +26,6 @@ class DINOv3Adapter(nn.Module):
             arch = self.MODEL_MAP[model_name]
 
         self.model = torch.hub.load(repo_dir, arch, source="local", pretrained=False)
-        if weight_path is not None:
-            state_dict = torch.load(weight_path, map_location="cpu")
-            self.model.load_state_dict(state_dict)
 
         self.embed_dim = getattr(self.model, "embed_dim", None)
         if self.embed_dim is None:
