@@ -160,9 +160,9 @@ class DepthAnythingV2(nn.Module):
         use_bn=False,
         use_clstoken=False,
         max_depth=20.0,
-        dinov3_repo_dir="/home/tione/notebook/home/wenxuan/DAM_daual_clean/depth_anything_v2_metric/depth_anything_v2/dinov3",     # 你的本地 repo
-        dinov3_arch="dinov3_vitl16",           # 例如 'dinov3_vitl16'
-        dinov3_weight="/media/home/gavinqi/wenxuan/DINOv3/DINOv3 ViT LVD-1689M/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+        dinov3_repo_dir="",     # 你的本地 repo
+        dinov3_arch="",           # 例如 'dinov3_vitl16'
+        dinov3_weight="",
     ):
         super().__init__()
         
