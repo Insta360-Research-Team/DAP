@@ -29,8 +29,8 @@ conda activate dap
 Install necessary packages (torch > 2):
 
 ```Bash
-# pytorch (select correct CUDA version, we test our code on torch==2.6.0 and torchvision==0.21.0)
-pip install torch==2.6.0 torchvision==0.21.0
+# pytorch (select correct CUDA version, we test our code on torch==2.7.1 and torchvision==0.22.1)
+pip install torch==2.7.1 torchvision==0.22.1
 
 # other dependencies
 pip install -r requirements.txt
