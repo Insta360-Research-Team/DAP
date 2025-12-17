@@ -1,4 +1,6 @@
-# Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation
+<h1 align="center">
+Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation
+</h1>
 
 <p align="center">
   <a href="https://linxin0.github.io"><b>Xin Lin</b></a> ·
