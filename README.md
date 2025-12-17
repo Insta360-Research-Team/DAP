@@ -3,6 +3,10 @@
 ### Xin Lin, Meixi Song, Dizhe Zhang, Wenxuan Lu, Haodong Li, Bo Du, Ming-Hsuan Yang, Truong Nguyen, Lu Qi
 
 
+[**Xin Lin**](https://linxin0.github.io) · [**Meixi Song**] · [**Dizhe Zhang**] · [**Wenxuan Lu**] · [**Haodong Li**](https://haodong2000.github.io)
+<br>
+[**Bo Du**] · [**Ming-Hsuan Yang**] · [**Truong Nguyen**] · [**Lu Qi**](http://luqi.info)
+
 <p align="center">
   <a href=''><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
   <a href='https://insta360-research-team.github.io/DAP_website/'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=insta360&logoColor=white' alt='Project Page'></a>
